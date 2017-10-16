@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title%}
+Avik|form
+{% endblock %}
+{% block welcome %}
+Please Gime your name!
+{% endblock %}
+{% block forms%}
+    <form class="myform" action="{{url_for('saved')}}" method="POST">
+      <input type="text" name="name" value="" autofocus>
+      <input type="submit" value="submit!">
+    </form>
+{% endblock %}
