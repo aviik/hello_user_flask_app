@@ -1,1 +1,1 @@
-web: gunicorn app:hello-user-avik
+web: gunicorn deploy:app
