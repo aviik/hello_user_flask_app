@@ -29,4 +29,5 @@ def saved():
     response.set_cookie('character' ,  json.dumps(data))
     return response
 
-app.run(debug = True)
+if __name__ == '__main__':
+    app.run()
